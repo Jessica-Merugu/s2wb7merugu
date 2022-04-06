@@ -1,2 +1,2 @@
-# s2wb71Merugu
+# s2wb71merugu
 Assignment 10
