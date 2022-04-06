@@ -1,0 +1,39 @@
+
+extends layout
+
+block content
+  h1= title
+  div(class="container-fluid")
+        div(class="row")
+            -
+                let Instrument= [
+                      {
+                        "Instrument_name": "Guitar",
+                        "Instrument_size": 500,
+                        "Instrument_cost": 5000
+                    },
+                    { 
+                        "Instrument_name": "Keyboard",
+                        "Instrument_size": 1000,
+                        "Instrument_cost": 15000
+                    },
+                    {
+                        "Instrument_name": "Flute",
+                        "Instrument_size": 750,
+                        "Instrument_cost": 10000
+                    },                   
+                ]
+            each c,index in Instrument
+                div(class="col-sm-2" onclick=`buy(${index})`) #{c.Instrument_name}
+                div(class="col-sm-2" onclick=`buy(${index})`) #{c.Instrument_size}
+                div(class="col-sm-2" onclick=`buy(${index})`) #{c.Instrument_cost}
+
+                script.                
+                      function buy(num)
+                      {
+                            alert(`You purchased item ${num+1}`)
+                      }
+  
+ 
+
+
