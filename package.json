@@ -16,5 +16,13 @@
   "main": "app.js",
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "Assignment 10",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessy0506/s2wb7merugu.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jessy0506/s2wb7merugu/issues"
+  },
+  "homepage": "https://github.com/jessy0506/s2wb7merugu#readme"
 }
